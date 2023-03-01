@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postvideo</title>
+
+<head>
+    <body>
+        <!--Student Registration Message-->
+    <h1>Welcome to Student </h1>
+    <h2>Pease Procced to Postvideo</h2>
+    <!--End of Student Registration Message-->
+
+    <!--Videos-->
+    <form>
+        <!--navi bar-->
+        <div class="index Home">
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">registration</a></li>
+                <li><a href="postvideo.html">Video Upload</a></li>
+                <li><a href="viewpost.html">View Upload</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+
+        <!--title name and discription of video-->
+        <form action="postvideo.php" method="post" enctype="multipart/form-data">
+            <h2>Upload Video</h2>
+            <input type="text" id="discription" name="name" required minlength="5" maxlength="20" size="14" placeholder="Video Title"><br>
+            <textarea id="text" name="discription" rows="5" cols="50" placeholder="Discription"></textarea><br>
+        </form>
+        <!--end-->
+
+        <!--video input-->
+        <form action="/action_page"><label for="video">Select Video:</label>
+            <input type="file" id="video" name="video" accept="video/*"><br>
+            <input type="Submit" value="upload video" name="Submit" required><br>
+            <br>
+            <input type="checkbox" required/> Do you agree to Accept Use Policy for uploading this video<br>
+            <input type="Submit"required>
+        </form>
+        <!--end of video input-->
+    </form>
+</body>
+</html>
